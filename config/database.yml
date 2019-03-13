@@ -1,0 +1,13 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  timeout: 5000
+  host: database
+  port: 5432
+  username: postgres
+  password:
+
+development:
+  <<: *default
+  database: rails42_sandbox_development
